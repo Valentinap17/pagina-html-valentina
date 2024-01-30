@@ -1,0 +1,329 @@
+Sub Macro1()
+'
+' Macro1 Macro
+'
+
+'
+    Range("J1").Select
+    ActiveCell.FormulaR1C1 = "Capital"
+    Range("J2").Select
+    ActiveCell.FormulaR1C1 = "Tasa"
+    Range("J3").Select
+    ActiveCell.FormulaR1C1 = "Seguro"
+    Range("A1").Select
+    ActiveCell.FormulaR1C1 = "#"
+    Range("B1").Select
+    ActiveCell.FormulaR1C1 = "Capital"
+    Range("C1").Select
+    ActiveCell.FormulaR1C1 = "Interés"
+    Range("D1").Select
+    ActiveCell.FormulaR1C1 = "Seguro"
+    Columns("B:B").Select
+    Columns("C:C").Select
+    Selection.Insert Shift:=xlToRight
+    Range("C1").Select
+    ActiveCell.FormulaR1C1 = "Abono a capital"
+    Range("D5").Select
+    Columns("C:C").ColumnWidth = 10.86
+    Columns("C:C").EntireColumn.AutoFit
+    Range("L1").Select
+    ActiveCell.FormulaR1C1 = "1500000000"
+    Range("L2").Select
+    ActiveCell.FormulaR1C1 = "0.0154"
+    Range("L3").Select
+    ActiveCell.FormulaR1C1 = "0.002"
+    Range("L1").Select
+    ActiveCell.FormulaR1C1 = "150000000"
+    Range("L1").Select
+    Selection.Copy
+    Range("B2").Select
+    ActiveSheet.Paste
+    Application.CutCopyMode = False
+    Range("K4").Select
+    ActiveCell.FormulaR1C1 = "Cuota"
+    Range("L4").Select
+    ActiveCell.FormulaR1C1 = "32000000"
+    Range("L4").Select
+    ActiveCell.FormulaR1C1 = "3200000"
+    Range("D2").Select
+    ActiveCell.FormulaR1C1 = "=RC[-2]*R2C12"
+    Range("E2").Select
+    ActiveCell.FormulaR1C1 = "=RC[-3]*R3C12"
+    Range("B1").Select
+    Columns("C:C").ColumnWidth = 14.71
+    Columns("D:D").ColumnWidth = 11.29
+    Columns("E:E").ColumnWidth = 11.57
+    Range("E1").Select
+    With Selection
+        .HorizontalAlignment = xlGeneral
+        .VerticalAlignment = xlCenter
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    With Selection
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlCenter
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Range("D1").Select
+    With Selection
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlBottom
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Range("B1").Select
+    With Selection
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlBottom
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Range("C1").Select
+    With Selection
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlBottom
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Range("C2").Select
+    ActiveCell.FormulaR1C1 = ""
+    Range("C2").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[2]C[9]-RC[1]-RC[2]"
+    Range("L4").Select
+    ActiveCell.FormulaR1C1 = "32000000"
+    Range("L4").Select
+    ActiveCell.FormulaR1C1 = "3200000"
+    Range("B3").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=R[-1]C-R[-1]C[1]"
+    Columns("L:L").Select
+    Selection.NumberFormat = "$ #,##0.00"
+    Rows("2:2").Select
+    Selection.NumberFormat = "$ #,##0.00"
+    Columns("D:D").EntireColumn.AutoFit
+    Rows("3:3").Select
+    Selection.NumberFormat = "$ #,##0.00"
+    Range("C2").Select
+    ActiveCell.FormulaR1C1 = "=R4C12-RC[1]-RC[2]"
+    Range("B3").Select
+    Selection.AutoFill Destination:=Range("B3:B87"), Type:=xlFillDefault
+    Range("B3:B87").Select
+    ActiveWindow.SmallScroll Down:=-70
+    Range("C2").Select
+    Selection.AutoFill Destination:=Range("C2:C87"), Type:=xlFillDefault
+    Range("C2:C87").Select
+    ActiveWindow.SmallScroll Down:=-69
+    Range("D2").Select
+    Selection.AutoFill Destination:=Range("D2:D87"), Type:=xlFillDefault
+    Range("D2:D87").Select
+    ActiveWindow.SmallScroll Down:=-69
+    Range("E2").Select
+    Selection.AutoFill Destination:=Range("E2:E87"), Type:=xlFillDefault
+    Range("E2:E87").Select
+    ActiveWindow.SmallScroll Down:=12
+    Range("B86").Select
+    Selection.AutoFill Destination:=Range("B86:B100"), Type:=xlFillDefault
+    Range("B86:B100").Select
+    Range("C87").Select
+    Selection.AutoFill Destination:=Range("C87:C100"), Type:=xlFillDefault
+    Range("C87:C100").Select
+    Range("D87").Select
+    Selection.AutoFill Destination:=Range("D87:D100"), Type:=xlFillDefault
+    Range("D87:D100").Select
+    Range("E87").Select
+    Selection.AutoFill Destination:=Range("E87:E100"), Type:=xlFillDefault
+    Range("E87:E100").Select
+    Range("F90").Select
+    ActiveWindow.SmallScroll Down:=-86
+    Range("I8").Select
+    Columns("L:L").ColumnWidth = 15.43
+    Columns("K:K").ColumnWidth = 11.29
+    Columns("K:K").Select
+    With Selection
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlBottom
+        .WrapText = False
+        .Orientation = 0
+        .AddIndent = False
+        .IndentLevel = 0
+        .ShrinkToFit = False
+        .ReadingOrder = xlContext
+        .MergeCells = False
+    End With
+    Range("M9").Select
+    ActiveWindow.SmallScroll Down:=0
+    Range("A2").Select
+    ActiveCell.FormulaR1C1 = "1"
+    Range("A2").Select
+    Selection.NumberFormat = "General"
+    Columns("A:A").Select
+    Selection.NumberFormat = "General"
+    Range("A3").Select
+    ActiveCell.FormulaR1C1 = "2"
+    Range("A2:A3").Select
+    Selection.AutoFill Destination:=Range("A2:A100")
+    Range("A2:A100").Select
+    Range("G8").Select
+    ActiveWindow.SmallScroll Down:=0
+    Range("A1:E100").Select
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    With Selection.Borders(xlEdgeLeft)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeTop)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeBottom)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeRight)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlInsideVertical)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlInsideHorizontal)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    Range("A1:E1").Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent2
+        .TintAndShade = 0.399975585192419
+        .PatternTintAndShade = 0
+    End With
+    Range("A1:E1").Select
+    Selection.Font.Bold = True
+    With Selection.Font
+        .Name = "Arial"
+        .Size = 11
+        .Strikethrough = False
+        .Superscript = False
+        .Subscript = False
+        .OutlineFont = False
+        .Shadow = False
+        .Underline = xlUnderlineStyleNone
+        .ThemeColor = xlThemeColorLight1
+        .TintAndShade = 0
+        .ThemeFont = xlThemeFontNone
+    End With
+    Range("G10").Select
+    Columns("C:C").ColumnWidth = 16
+    ActiveWindow.SmallScroll Down:=0
+    Range("A2:B54").Select
+    ActiveWindow.SmallScroll Down:=-47
+    Range("A2:E100").Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorLight2
+        .TintAndShade = 0.599993896298105
+        .PatternTintAndShade = 0
+    End With
+    Range("G10").Select
+    ActiveWindow.SmallScroll Down:=0
+    Range("K1:L4").Select
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    With Selection.Borders(xlEdgeLeft)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeTop)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeBottom)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeRight)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlInsideVertical)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlInsideHorizontal)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    Range("K1:K4").Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent2
+        .TintAndShade = 0.399975585192419
+        .PatternTintAndShade = 0
+    End With
+    Range("L1:L4").Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent1
+        .TintAndShade = 0.599993896298105
+        .PatternTintAndShade = 0
+    End With
+    Range("I3").Select
+End Sub
